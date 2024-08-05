@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- untuk memberitahu browser bahasa yang di gunakan dalam konten -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Contoh E-Commerce</title>
+    <link rel="stylesheet" href="style.css"> <!-- untuk mengoneksikan ke css -->
+</head>
+<body>
+
+    <header>
+        <img src="2.svg" class="logo">
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="keranjang.html">Keranjang Belanja</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section>
+        <h1>Keranjang Belanja</h1>
+        <div id="cart-content"></div><br>
+        <a href="Form.html">
+            <button class = "beli">Beli Sekarang</button>
+        </a>
+    </section>
+
+    <!-- untuk memanggil tampilan keranjang di cart.js -->
+    <script src="cart.js"></script> 
+    <script>
+        let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+        let cartContent = document.getElementById('cart-content');
+
+        keranjang.forEach((produk, index) => {
+            let produkElement = document.createElement('div');
+            produkElement.innerHTML = `
+                <img src="${produk.gambar}" alt="${produk.nama}" style="max-width: 200px; max-height: 200px;">
+                <p>${produk.nama} - Rp ${produk.harga} <button class="button1" onclick="hapusDariKeranjang(${index})">Hapus</button></p>`;
+            cartContent.appendChild(produkElement); //agar tidak menumpuk saat ditambahkan ke keranjang
+        });
+       
+        //untuk menghapus produk dari keranjang
+        function hapusDariKeranjang(index) {
+            keranjang.splice(index, 1);
+            localStorage.setItem('keranjang', JSON.stringify(keranjang));
+            location.reload();
+        }
+    </script>
+</body>
+</html>

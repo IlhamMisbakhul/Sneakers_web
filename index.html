@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh E-Commerce</title>
+    <link rel="stylesheet" href="style-index.css"> <!-- untuk mengoneksikan ke css-->
+</head>
+<body>
+
+    <header>
+        <img src="2.svg" class="logo">
+    </header>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="keranjang.html">Keranjang Belanja</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <h1>SELAMAT DATANG DI SNEAKERS AREA</h1>
+    <p> Wear comfortable shoes with the best quality and price! <br>
+        Now you can choose your favorite shoes here, cause this is the SNEAKERS AREA.
+    </p>
+
+    <!-- untuk menampilkan gambar produk pada beranda -->
+    <section class="index">
+        <div class="product" id="product1" data-product-id="product1">
+            <img src="Nike1.jpeg" alt="Produk 1">
+            <h2>Nike Blazer Mid</h2>
+            <p>Rp 1.299.000</p>
+            <button onclick="tambahKeKeranjang('Nike Blazer Mid', 1299000,'Nike1.jpeg')">Beli Sekarang</button>
+        </div>
+
+        <div class="product" id="product2" data-product-id="product2">
+            <img src="Nike2.jpeg" alt="Produk 2">
+            <h2>Nike Blazer Mid</h2>
+            <p>Rp 1.125.000</p>
+            <button onclick="tambahKeKeranjang('Nike Blazer Mid', 1125000,'Nike2.jpeg')">Beli Sekarang</button>
+        </div>
+        <div class="product" id="product3" data-product-id="product3">
+            <img src="Nike3.jpeg" alt="Produk 3">
+            <h2>Nike Men's Running</h2>
+            <p>Rp 1.499.000</p>
+            <button onclick="tambahKeKeranjang('Nike Mens Running', 1499000, 'Nike3.jpeg')">Beli Sekarang</button>
+        </div>
+
+        <div class="product" id="product4" data-product-id="product4">
+            <img src="Nike4.jpeg" alt="Produk 4">
+            <h2>Nike Men's Running</h2>
+            <p>Rp 1.450.000</p>
+            <button onclick="tambahKeKeranjang('Nike Mens Running', 1450000, 'Nike4.jpeg')">Beli Sekarang</button>
+        </div>
+
+        <div class="product" id="product5" data-product-id="product5">
+            <img src="Adi1.jpeg" alt="Produk 5">
+            <h2>Adidas Running</h2>
+            <p>Rp 1.300.000</p>
+            <button onclick="tambahKeKeranjang('Adidas Running', 1300000,'Adi1.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product6" data-product-id="product6">
+            <img src="Adi2.jpeg" alt="Produk 6">
+            <h2>Adidas Running</h2>
+            <p>Rp 1.300.000</p>
+            <button onclick="tambahKeKeranjang('Adidas Running', 1300000, 'Adi2.jpeg')">Beli Sekarang</button>
+        </div>
+
+        <div class="product" id="product7" data-product-id="product7">
+            <img src="adi3.jpeg" alt="Produk 7">
+            <h2>Adidas Running</h2>
+            <p>Rp 1.300.000</p>
+            <button onclick="tambahKeKeranjang('Adidas Running', 1300000, 'Adi3.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product8" data-product-id="product8">
+            <img src="Adi4.jpeg" alt="Produk 8">
+            <h2>Adidas Running</h2>
+            <p>Rp 1.300.000</p>
+            <button onclick="tambahKeKeranjang('Adidas Running', 1300000, 'Adi4.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product9" data-product-id="product9">
+            <img src="Convers1.jpeg" alt="Produk 9">
+            <h2>Converse Chuck Taylor All Star</h2>
+            <p>Rp 1.299.000</p>
+            <button onclick="tambahKeKeranjang('Converse Chuck Taylor All Star', 1299000, 'Convers1.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product10" data-product-id="product10">
+            <img src="Convers2.jpeg" alt="Produk 10">
+            <h2>Converse Chuck Taylor All Star</h2>
+            <p>Rp 1.299.000</p>
+            <button onclick="tambahKeKeranjang('Converse Chuck Taylor All Star', 1299000, 'Convers2.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product11" data-product-id="product11">
+            <img src="Convers3.jpeg" alt="Produk 11">
+            <h2>Converse Chuck Taylor All Star</h2>
+            <p>Rp 1.299.000</p>
+            <button onclick="tambahKeKeranjang('Converse Chuck Taylor All Star', 1299000, 'Convers3.jpeg')">Beli Sekarang</button>
+        </div>
+
+         <div class="product" id="product12" data-product-id="product12">
+            <img src="Convers4.jpeg" alt="Produk 12">
+            <h2>Converse Chuck Taylor All Star</h2>
+            <p>Rp 1.299.000</p>
+            <button onclick="tambahKeKeranjang('Converse Chuck Taylor All Star', 1299000, 'Convers4.jpeg')">Beli Sekarang</button>
+        </div>
+
+
+    </section>
+
+<!-- memanggil cart.js agar produknya bisa terhubung ke keranjang -->
+    <script src="cart.js"></script>
+</body>
+</html>

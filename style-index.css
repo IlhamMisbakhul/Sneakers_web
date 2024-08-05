@@ -1,0 +1,130 @@
+/* Untuk mengatur semua yang ada di index, dan mengatur gambar agar tidak berantakan*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+
+h1, p {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+header, nav, section, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a { /*untuk pewarnaan text beranda, keranjang dan kontak*/
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product { /*untuk gambar product*/
+    width: 23%; 
+    margin: 10px;
+    box-sizing: border-box;
+}
+.product:hover { /*untuk menambahkan bayangan saat krusor berjalan ke arah produk*/
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+table { /*untuk mengatur form*/
+            width: 80%;
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+
+        table, th, td {
+            border: 0px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+button { /* untuk mengatur tombol beli*/
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.button1{ /*untuk mengatur rombol hapus*/
+    display: block;
+    width: 10%;
+    margin:0 auto;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: #7C0A02;
+}
+.beli{ /*tampilan tombol beli*/
+    display: block;
+    width: 10%;
+    margin:0 auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.konfirmasi{ /*tampilan tombol konfirmasi*/
+    display: block;
+    width: 10%;
+    margin:0 auto;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.logo{ 
+    width: 560px;
+    height: 104px;
+}
+small { /*background*/
+    display: block;
+    margin-top: 5px;
+}
+.icon { /*tampilan icon sosmed*/
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
